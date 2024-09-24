@@ -4,15 +4,12 @@ public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-        // Sjekk om tabellen er tom
         if (tabell == null || tabell.length == 0) {
             System.out.println("Tabellen er tom.");
             return;
         }
         
-        // Iterer gjennom arrayet og skriv ut elementene
         for (int i = 0; i < tabell.length; i++) {
-            // Skriv ut elementet, men uten komma etter siste element
             if (i == tabell.length - 1) {
                 System.out.print(tabell[i]);
             } else {
@@ -20,7 +17,6 @@ public class Tabeller {
             }
         }
         
-        // Gå til neste linje etter at arrayet er skrevet ut
         System.out.println();
 		
 	}
